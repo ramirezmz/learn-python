@@ -1,3 +1,7 @@
-import tkinter
+import tkinter as tk
 
-tkinter._test()
+janela = tk.Tk()
+T = tk.Text(janela, height=1, width=30)
+T.pack()
+T.insert(tk.END, "Este é um texto\ncom duas linhas\n")
+tk.mainloop()
